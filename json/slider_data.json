@@ -1,0 +1,36 @@
+{
+    "slides": [
+        {
+            "image": "../images/slider (4).jpg",
+            "alt": "sample",
+            "title": "Do you want to go legit?",
+            "topic": "Register Your Business for only LKR28,000",
+            "description": "Register Your Business as a Private Limited Company from us for only LKR28,000",
+            "buttonId": "slider-btn-seemore1"
+        },
+        {
+            "image": "../images/slider (3).jpg",
+            "alt": "sample",
+            "title": "We will help you with your",
+            "topic": "Income TAX",
+            "description": "We provide all the services related to Income TAX for you.",
+            "buttonId": "slider-btn-seemore2"
+        },
+        {
+            "image": "../images/slider (1).jpg",
+            "alt": "sample",
+            "title": "Planning to Fly to another country?",
+            "topic": "Financials for VISA",
+            "description": "Get Your or Yours Sponsor's Financial Affordability Certified By A Chartered        Accountant in Applying for VISA.",
+            "buttonId": "slider-btn-seemore3"
+        },
+        {
+            "image": "../images/slider (2).jpg",
+            "alt": "sample",
+            "title": "Having trouble with Audits",
+            "topic": "We will Help to Audit",
+            "description": "We offer Financial Auditing Services for all types of businesses",
+            "buttonId": "slider-btn-seemore4"
+        }
+    ]
+}

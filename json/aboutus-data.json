@@ -1,0 +1,23 @@
+{
+    "mainImage": "images/bg-2019.jpg",
+    "title": "Who are We",
+    "description": [
+      "We pride ourselves on a client-centered approach tailored to each industry's unique needs. Our transparent service delivery ensures pre-scheduled, planned, and cost-effective performance, aimed at exceeding your expectations while ensuring legal and financial compliance.",
+      "Our greatest asset is our people. With expertise from leading professional service firms, our team brings diverse knowledge in governance, risk management, finance, IT, and internal controls. We blend the latest technology with human creativity to provide highly personalized services. We cater to diverse industries, ensuring personalized service and competitive fees based on time, skill, and expertise required for each project."
+    ],
+    "stats": [
+      {
+        "value": 40,
+        "title": "Clients"
+      },
+      {
+        "value": 30,
+        "title": "Projects"
+      },
+      {
+        "value": 20,
+        "title": "Years of Experience"
+      }
+    ]
+  }
+  

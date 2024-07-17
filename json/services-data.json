@@ -1,0 +1,41 @@
+{
+    "services": [
+      {
+        "title": "Company Secretarial Services",
+        "description": "Get your company registration, maintain statutory books and records, provide company secretary services, attend meetings, and prepare minutes for directors and shareholders.",
+        "image": "../images/Secretarial.svg",
+        "link": "services.html#p1"
+      },
+      {
+        "title": "Bookkeeping & Related Services",
+        "description": "We provide record keeping, bank reconciliations, financial statement preparation, payroll processing, cash flow projection, budgetary services, fixed assets register maintenance, and QuickBooks package installation for your business.",
+        "image": "../images/Bookkeeping.svg",
+        "link": "services.html#p2"
+      },
+      {
+        "title": "Private Sector Assurance & Other Assignments",
+        "description": "This includes assurance, statistical audits, compilation, fixed asset verifications, asset register development, and inventory verifications.",
+        "image": "../images/Assurance.svg",
+        "link": "services.html#p3"
+      },
+      {
+        "title": "Tax Advisory & Planning",
+        "description": "All of your tax planning, compliance assistance, computation preparation, return completion, audit preparation, Department of Inland Revenue queries, and tax clearances.",
+        "image": "../images/Tax.svg",
+        "link": "services.html#p4"
+      },
+      {
+        "title": "Payroll and HR Services",
+        "description": "We utilize computer programs for payroll processing, ensuring client confidentiality of salary information, and managing additional pay-related services like EPF, ETF, and PAYE.",
+        "image": "../images/other.svg",
+        "link": "services.html#p5"
+      },
+      {
+        "title": "Trade Name & Trademark Registration",
+        "description": "We assist with all your trade name or trademark registration and the entire process.",
+        "image": "../images/branding.svg",
+        "link": "services.html#p6"
+      }
+    ]
+  }
+  

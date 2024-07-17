@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="script.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght@300" rel="stylesheet" />
+    <title>Dashbaord</title>
+</head>
+
+<body class="bg-base-300 p-1 mb-0" onload="LoadData()">
+
+  <section id="About us">
+    <h2 class="text-3xl font-bold mt-2 ml-2"> About US </h2>
+    <div class="w-12/12 p-1 h-auto bg-base-100 m-5 rounded-lg">
+
+      <div class="w-12/12 h-auto m-5 bg-base-200 rounded-md shadow-md p-3">
+          <Div class=" w-12/12 flex flex-row justify-between content-center">
+            <h3 class="text-2xl">Title</h3>
+            <button class="btn btn-info mr-2 aspect-square" >
+              <span class="material-symbols-outlined">edit</span>
+            </button>
+          </Div>
+          
+          <div class="w-12/12 border border-slate-600 m-2 p-3 rounded ">
+              <p id="TitleText"></p>
+          </div>
+      </div>
+
+      <div class="w-12/12 h-auto m-5 bg-base-200 rounded-md shadow-md p-3">
+        <Div class=" w-12/12 flex flex-row justify-between content-center">
+          <h3 class="text-2xl">Description</h3>
+          <button class="btn btn-info mr-2 aspect-square" >
+            <span class="material-symbols-outlined">add</span>
+          </button>
+        </Div>
+        <table class="table" id="DescriptionTable">
+          <thead>
+            <tr>
+              <th>Description</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+
+          <tbody>
+
+          </tbody>
+          
+        </table>
+    </div>
+
+    <div class="w-12/12 h-auto m-5 bg-base-200 rounded-md shadow-md p-3">
+      <Div class=" w-12/12 flex flex-row justify-between content-center">
+        <h3 class="text-2xl">Main Image</h3>
+        <button class="btn btn-info mr-2 aspect-square" >
+          <span class="material-symbols-outlined">edit</span>
+        </button>
+      </Div>
+      
+      <div class="w-12/12 border border-slate-600 m-2 p-3 rounded ">
+          <p id="MainImgPath"></p>
+      </div>
+  </div>
+
+    <div class="w-12/12 h-auto m-5 bg-base-200 rounded-md shadow-md p-3">
+      <h3 class="text-2xl">Stats</h3>
+      <table class="table" id="StatTable">
+        <thead>
+          <tr>
+            <th>Stat</th>
+            <th>Value</th>
+            <th>Action</th>
+        </tr>
+        </thead>
+
+        <tbody>
+
+        </tbody>
+
+      </table>
+    </div>
+
+    <div class="w-12/12 h-auto m-5 bg-base-200 rounded-md shadow-md p-3">
+      <h3 class="text-2xl">About Us Logos</h3>
+
+      <div class=" w-12/12 overflow-x-scroll p-3">
+        <table class="table table-zebra">
+          <thead>
+            <tr>
+              <th>Link</th>
+              <th>Image BW</th>
+              <th>Image Color</th>
+              <th>Alt Text</th>
+              <th>action</th>
+            </tr>
+          </thead>
+          <tbody id="aboutLogoTable">
+
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    </div>
+   </section>
+
+   <section id="contact" class="mt-2">
+    <h2 class="text-3xl font-bold mt-2 ml-2"> Contact </h2>
+    <div class="w-12/12 p-1 h-auto bg-base-100 m-5 rounded-lg">
+
+      <div class="w-12/12 h-auto m-5 bg-base-200 rounded-md shadow-md p-3">
+        <div class="w-12/12 flex flex-row justify-between">
+          <h3 class="text-2xl">Phone Numbers</h3>
+          <button class="btn btn-info aspect-square">
+            <span class="material-symbols-outlined">add</span>
+          </button>
+        </div>
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th>name</th>
+              <th>Contact number</th>
+              <th>action</th>
+            </tr>
+          </thead>
+          <tbody id="ContactTable">
+
+          </tbody>
+        </table>
+      </div>
+
+      <div class="w-12/12 h-auto m-5 bg-base-200 rounded-md shadow-md p-3">
+        <div class="w-12/12 flex flex-row justify-between">
+          <h3 class="text-2xl">Services</h3>
+          <button class="btn btn-info aspect-square">
+            <span class="material-symbols-outlined">add</span>
+          </button>
+        </div>
+
+        <table class="table">
+          <thead>
+            <tr>
+              <th>Service</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody id="ServicesTable">
+
+          </tbody>
+        </table>
+      </div>
+
+    </div>
+   </section>
+
+   <section id="Services">
+      <h2 class="text-3xl font-bold mt-2 ml-2"> Services </h2>
+      <div class="w-12/12 p-1 h-auto bg-base-100 m-5 rounded-lg">
+        <div class="w-12/12 h-auto m-5 bg-base-200 rounded-md shadow-md p-3">
+          <div class="w-12/12 flex flex-row justify-between">
+            <h3 class="text-2xl">Services</h3>
+            <button class="btn btn-info aspect-square">
+              <span class="material-symbols-outlined">add</span>
+            </button>
+          </div>
+
+          <div class="w-12/12 overflow-x-scroll">
+            <table class="table">
+              <th>
+                <td>#</td>
+                <td>Title</td>
+                <td>Description</td>
+                <td>Image</td>
+                <td>Link</td>
+                <td>action</td>
+              </th>
+            </table>
+          </div>
+          
+        </div>
+
+      </div>
+   </section>
+
+   <section id="Slider">
+    <h2 class="text-3xl font-bold mt-2 ml-2"> Sliders </h2>
+    <div class="w-12/12 p-1 h-auto bg-base-100 m-5 rounded-lg">
+      <div class="w-12/12 h-auto m-5 bg-base-200 rounded-md shadow-md p-3">
+        <div class="w-12/12 flex flex-row justify-between">
+          <h3 class="text-2xl">Sliders</h3>
+          <button class="btn btn-info aspect-square">
+            <span class="material-symbols-outlined">add</span>
+          </button>
+        </div>
+
+        <div class="w-12/12 overflow-x-scroll">
+          <table class="table">
+            <th>
+              <td>#</td>
+              <td>Image</td>
+              <td>Alt</td>
+              <td>Tite</td>
+              <td>Topic</td>
+              <td>Description</td>
+              <td>Button ID</td>
+              <td>action</td>
+            </th>
+          </table>
+        </div>
+        
+      </div>
+
+    </div>
+ </section>
+</body>
+</html>

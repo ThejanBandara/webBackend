@@ -1,0 +1,17 @@
+{
+    "phoneNumbers": [
+        { "name": "Name", "number": "+94(0)77 777 7777" },
+        { "name": "Name", "number": "+94(0)77 777 7777" },
+        { "name": "Name", "number": "+94(0)77 777 7777" }
+    ],
+
+    "services": [
+        "Service#",
+        "Service#",
+        "Service#",
+        "Service#",
+        "Service#",
+        "Service#",
+        "Other"
+    ]
+}

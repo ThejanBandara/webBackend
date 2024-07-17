@@ -1,0 +1,52 @@
+{
+    "logos": [
+        {
+            "link": "sample.html",
+            "bwImage": "../images/sample_logos/Asset 1 BW.png",
+            "colorImage": "../images/sample_logos/Asset 1.png",
+            "alt": "Logo 1"
+        },
+        {
+            "link": "sample.html",
+            "bwImage": "../images/sample_logos/Asset 2 BW.png",
+            "colorImage": "../images/sample_logos/Asset 2.png",
+            "alt": "Logo 2"
+        },
+        {
+            "link": "sample.html",
+            "bwImage": "../images/sample_logos/Asset 3 BW.png",
+            "colorImage": "../images/sample_logos/Asset 3.png",
+            "alt": "Logo 3"
+        },
+        {
+            "link": "sample.html",
+            "bwImage": "../images/sample_logos/Asset 4 BW.png",
+            "colorImage": "../images/sample_logos/Asset 4.png",
+            "alt": "Logo 4"
+        },
+        {
+            "link": "sample.html",
+            "bwImage": "../images/sample_logos/Asset 5 BW.png",
+            "colorImage": "../images/sample_logos/Asset 5.png",
+            "alt": "Logo 5"
+        },
+        {
+            "link": "sample.html",
+            "bwImage": "../images/sample_logos/Asset 6 BW.png",
+            "colorImage": "../images/sample_logos/Asset 6.png",
+            "alt": "Logo 6"
+        },
+        {
+            "link": "sample.html",
+            "bwImage": "../images/sample_logos/Asset 7 BW.png",
+            "colorImage": "../images/sample_logos/Asset 7.png",
+            "alt": "Logo 7"
+        },
+        {
+            "link": "sample.html",
+            "bwImage": "../images/sample_logos/Asset 8 BW.png",
+            "colorImage": "../images/sample_logos/Asset 8.png",
+            "alt": "Logo 8"
+        }
+    ]
+}
