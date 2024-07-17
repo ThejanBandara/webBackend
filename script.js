@@ -14,6 +14,9 @@ function LoadData(){
     const ServicesTable = document.getElementById('ServicesTable');
     var Contacts, Services;
 
+    const ServiceDataTable = document.getElementById('ServiceDataTable');
+
+    const SliderTable = document.getElementById('SliderTable');
     fetch('json/aboutus-data.json')
         .then(res => res.json())
         .then(data => {
@@ -131,4 +134,61 @@ function LoadData(){
                     ServicesTable.innerHTML += row;
                 });
             })
-}
+
+        fetch('json/services-data.json')
+            .then(res => res.json())
+            .then(data =>{
+                data.services.forEach(element => {
+                    var row = `<tr>
+                                <td>${element.title} </td>
+                                <td>${element.description}</td>
+                                <td>${element.image}</td>
+                                <td>${element.link}</td>
+                                <td>
+                                <div class="flex">
+                                    <button class="btn btn-info aspect-square mx-1">
+                                    <span class="material-symbols-outlined">edit</span>
+                                    </button>
+                                    <button class="btn btn-error aspect-square mx-1">
+                                    <span class="material-symbols-outlined">delete</span>
+                                    </button>
+                                </div>
+                                </td>
+                            </tr>`
+                            ServiceDataTable.innerHTML += row;
+                    
+                });
+            })
+
+            fetch('json/slider_data.json')
+            .then(res => res.json())
+            .then(data =>{
+                data.slides.forEach(element => {
+                    var row = `<tr>
+                                <td>${element.image} </td>
+                                <td>${element.alt}</td>
+                                <td>${element.title}</td>
+                                <td>${element.topic}</td>
+                                <td>${element.description}</td>
+                                <td>${element.buttonId}</td>
+                                <td>${element.link}</td>
+                                <td>
+                                <div class="flex">
+                                    <button class="btn btn-info aspect-square mx-1">
+                                    <span class="material-symbols-outlined">edit</span>
+                                    </button>
+                                    <button class="btn btn-error aspect-square mx-1">
+                                    <span class="material-symbols-outlined">delete</span>
+                                    </button>
+                                </div>
+                                </td>
+                            </tr>`
+                            SliderTable.innerHTML += row;
+                    
+                });
+            })
+ 
+
+        }
+
+                
