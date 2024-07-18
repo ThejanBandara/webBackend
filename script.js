@@ -1,6 +1,7 @@
 function LoadData(){
 
     const TitleText = document.getElementById('TitleText');
+    const TitleTextEdit = document.getElementById('TitleTextEdit');
     const MainImgPath = document.getElementById('MainImgPath');
     const DescriptionTable = document.getElementById('DescriptionTable');
     const StatTable = document.getElementById('StatTable');
@@ -22,6 +23,8 @@ function LoadData(){
         .then(data => {
 
             TitleText.innerHTML = data.title;
+            TitleTextEdit.value = data.title;
+
             MainImgPath.innerHTML = data.mainImage;
 
             descriptions = data.description;
@@ -31,7 +34,7 @@ function LoadData(){
                                 <p class="text-base">${text}</p>
                             </td> 
                              <td> <div class ="flex"> 
-                                <button class="btn btn-info aspect-square mx-1">
+                                <button class="btn btn-info aspect-square mx-1" onClick="Description_Edit_Modal.showModal()">
                                     <span class="material-symbols-outlined">edit</span>
                                 </button> 
                                 <button class="btn btn-error aspect-square mx-1">
@@ -49,7 +52,7 @@ function LoadData(){
                             <td class="text-base">${stat.title}</td>
                             <td  class="text-base">${stat.value}</td>
                             <td>
-                                <button class="btn btn-info aspect-square">
+                                <button class="btn btn-info aspect-square" onClick="Stat_edit_modal.showModal()">
                                 <span class="material-symbols-outlined">edit</span>
                                 </button>
                             </td>
@@ -71,7 +74,7 @@ function LoadData(){
                                 <td class="text-base">${logo.alt}</td>
                                 <td >
                                     <div class="flex">
-                                    <button class="btn btn-info aspect-square mx-1">
+                                    <button class="btn btn-info aspect-square mx-1" onClick="About_Us_Logo_Edit.showModal()">
                                         <span class="material-symbols-outlined">edit</span>
                                     </button>
 
@@ -98,7 +101,7 @@ function LoadData(){
                                 <td class="text-base">${element.number}</td>
                                 <td>
                                     <div class="flex">
-                                    <button class="btn btn-info aspect-square mx-1">
+                                    <button class="btn btn-info aspect-square mx-1" onClick="Contact_edit_modal.showModal()">
                                         <span class="material-symbols-outlined">edit</span>
                                     </button>
 
@@ -120,7 +123,7 @@ function LoadData(){
                                 <td class="text-base">${element}</td>
                                 <td>
                                     <div class="flex">
-                                    <button class="btn btn-info aspect-square mx-1">
+                                    <button class="btn btn-info aspect-square mx-1" onClick="Services_edit_modal.showModal()">
                                         <span class="material-symbols-outlined">edit</span>
                                     </button>
 
@@ -146,7 +149,7 @@ function LoadData(){
                                 <td>${element.link}</td>
                                 <td>
                                 <div class="flex">
-                                    <button class="btn btn-info aspect-square mx-1">
+                                    <button class="btn btn-info aspect-square mx-1" onClick="Service_data_Edit_Modal.showModal()">
                                     <span class="material-symbols-outlined">edit</span>
                                     </button>
                                     <button class="btn btn-error aspect-square mx-1">
@@ -171,10 +174,9 @@ function LoadData(){
                                 <td>${element.topic}</td>
                                 <td>${element.description}</td>
                                 <td>${element.buttonId}</td>
-                                <td>${element.link}</td>
                                 <td>
                                 <div class="flex">
-                                    <button class="btn btn-info aspect-square mx-1">
+                                    <button class="btn btn-info aspect-square mx-1" onClick="Slider_data_Edit_Modal.showModal()">
                                     <span class="material-symbols-outlined">edit</span>
                                     </button>
                                     <button class="btn btn-error aspect-square mx-1">

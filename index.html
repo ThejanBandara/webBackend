@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE html >
 <html lang="en" data-theme="dark">
 <head>
     <meta charset="UTF-8">
@@ -19,7 +19,7 @@
       <div class="w-12/12 h-auto m-5 bg-base-200 rounded-md shadow-md p-3">
           <Div class=" w-12/12 flex flex-row justify-between content-center">
             <h3 class="text-2xl">Title</h3>
-            <button class="btn btn-info mr-2 aspect-square" >
+            <button class="btn btn-info mr-2 aspect-square" onclick="Title_Modal.showModal()">
               <span class="material-symbols-outlined">edit</span>
             </button>
           </Div>
@@ -32,7 +32,7 @@
       <div class="w-12/12 h-auto m-5 bg-base-200 rounded-md shadow-md p-3">
         <Div class=" w-12/12 flex flex-row justify-between content-center">
           <h3 class="text-2xl">Description</h3>
-          <button class="btn btn-info mr-2 aspect-square" >
+          <button class="btn btn-info mr-2 aspect-square" onclick="Description_New_Modal.showModal()">
             <span class="material-symbols-outlined">add</span>
           </button>
         </Div>
@@ -54,7 +54,7 @@
     <div class="w-12/12 h-auto m-5 bg-base-200 rounded-md shadow-md p-3">
       <Div class=" w-12/12 flex flex-row justify-between content-center">
         <h3 class="text-2xl">Main Image</h3>
-        <button class="btn btn-info mr-2 aspect-square" >
+        <button class="btn btn-info mr-2 aspect-square" onclick="MainImage_Modal.showModal()">
           <span class="material-symbols-outlined">edit</span>
         </button>
       </Div>
@@ -83,7 +83,13 @@
     </div>
 
     <div class="w-12/12 h-auto m-5 bg-base-200 rounded-md shadow-md p-3">
-      <h3 class="text-2xl">About Us Logos</h3>
+      <div class="flex justify-between">
+        <h3 class="text-2xl">About Us Logos</h3>
+        <button class="btn btn-info aspect-square mr-2" onclick="About_Us_Logo_Edit.showModal()">
+          <span class="material-symbols-outlined">add</span>
+        </button>
+      </div>
+
 
       <div class=" w-12/12 overflow-x-scroll p-3">
         <table class="table table-zebra">
@@ -113,7 +119,7 @@
       <div class="w-12/12 h-auto m-5 bg-base-200 rounded-md shadow-md p-3">
         <div class="w-12/12 flex flex-row justify-between">
           <h3 class="text-2xl">Phone Numbers</h3>
-          <button class="btn btn-info aspect-square">
+          <button class="btn btn-info aspect-square" onclick="Contact_edit_modal.showModal()">
             <span class="material-symbols-outlined">add</span>
           </button>
         </div>
@@ -135,7 +141,7 @@
       <div class="w-12/12 h-auto m-5 bg-base-200 rounded-md shadow-md p-3">
         <div class="w-12/12 flex flex-row justify-between">
           <h3 class="text-2xl">Services</h3>
-          <button class="btn btn-info aspect-square">
+          <button class="btn btn-info aspect-square" onclick="Services_edit_modal.showModal()">
             <span class="material-symbols-outlined">add</span>
           </button>
         </div>
@@ -162,7 +168,7 @@
         <div class="w-12/12 h-auto m-5 bg-base-200 rounded-md shadow-md p-3">
           <div class="w-12/12 flex flex-row justify-between">
             <h3 class="text-2xl">Services</h3>
-            <button class="btn btn-info aspect-square">
+            <button class="btn btn-info aspect-square" onclick="Service_data_Edit_Modal.showModal()">
               <span class="material-symbols-outlined">add</span>
             </button>
           </div>
@@ -195,7 +201,7 @@
       <div class="w-12/12 h-auto m-5 bg-base-200 rounded-md shadow-md p-3">
         <div class="w-12/12 flex flex-row justify-between">
           <h3 class="text-2xl">Sliders</h3>
-          <button class="btn btn-info aspect-square">
+          <button class="btn btn-info aspect-square" onclick="Slider_data_Edit_Modal.showModal()">
             <span class="material-symbols-outlined">add</span>
           </button>
         </div>
@@ -223,5 +229,175 @@
 
     </div>
  </section>
+
+ <dialog id="Title_Modal" class="modal">
+  <div class="modal-box w-12/12">
+    <h3 class="font-bold text-lg">Edit Title</h3>
+    <input type="text" placeholder="Title" id="TitleTextEdit" class="input input-bordered input-md w-full mt-4" />
+    <div class="modal-action">
+      <button class="btn btn-success mx-2">Update</button>
+      <form method="dialog">
+        <button class="btn btn-error">Close</button>
+      </form>
+    </div>
+  </div>
+ </dialog>
+
+ <dialog id="Description_Edit_Modal" class="modal">
+  <div class="modal-box w-11/12 max-w-5xl">
+    <h3 class="text-lg font-bold">Edit Description</h3>
+    <textarea id="DescriptionEdit" class="textarea textarea-bordered textarea-lg w-full mt-4" placeholder="Description"></textarea>
+    <div class="modal-action">
+      <button class="btn btn-success mx-2">Update</button>
+      <form method="dialog">
+        <button class="btn btn-error">Close</button>
+      </form>
+    </div>
+  </div>
+ </dialog>
+
+ <dialog id="Description_New_Modal" class="modal">
+  <div class="modal-box w-11/12 max-w-5xl">
+    <h3 class="text-lg font-bold">Add new Description</h3>
+    <textarea id="DescriptionEdit" class="textarea textarea-bordered textarea-lg w-full mt-4" placeholder="Description"></textarea>
+    <div class="modal-action">
+      <button class="btn btn-success mx-2">Add</button>
+      <form method="dialog">
+        <button class="btn btn-error">Close</button>
+      </form>
+    </div>
+  </div>
+ </dialog>
+
+ <dialog id="MainImage_Modal" class="modal">
+  <div class="modal-box w-12/12">
+    <h3 class="font-bold text-lg">Edit Main Image</h3>
+    <input type="text" placeholder="Main Image" id="MainImgEditText" class="input input-bordered input-md w-full mt-4" />
+    <div class="modal-action">
+      <button class="btn btn-success mx-2">Update</button>
+      <form method="dialog">
+        <button class="btn btn-error">Close</button>
+      </form>
+    </div>
+  </div>
+ </dialog>
+
+ <dialog id="Stat_edit_modal" class="modal">
+  <div class="modal-box w-11/12 max-w-5xl">
+    <h3 class="text-lg font-bold">Edit Stat</h3>
+    <div class="flex gap-2">
+      <input type="text" placeholder="Stat Title" id="StatTitleEdit" class="input input-bordered input-md w-full mt-4 mx-2" />
+      <input type="text" placeholder="Stat Description" id="StatDescriptionEdit" class="input input-bordered input-md w-full mt-4 mx-2" />
+    </div>
+    <div class="modal-action">
+      <button class="btn btn-success mx-2">Update</button>
+      <form method="dialog">
+        <button class="btn btn-error">Close</button>
+      </form>
+    </div>
+  </div>
+ </dialog>
+
+ <dialog id="About_Us_Logo_Edit" class="modal">
+  <div class="modal-box w-11/12 max-w-5xl">
+    <h3 class="text-lg font-bold">Edit About US Logo</h3>
+      <div class="label">
+        <span class="label-text">Link</span>
+      </div>
+      <input type="text"  class="input input-bordered input-md w-full mb-2">
+
+      <div class="label">
+        <span class="label-text">Alt Text</span>
+      </div>
+      <input type="text"  class="input input-bordered input-md w-full mb-2">
+
+      <div class="label">
+        <span class="label-text">B&w Logo</span>
+      </div>
+      <input type="text"  class="input input-bordered input-md w-full mb-2">
+
+      <div class="label">
+        <span class="label-text">Color Logo</span>
+      </div>
+      <input type="text" class="input input-bordered input-md w-full mb-2">
+
+      <div class="modal-action">
+        <button class="btn btn-success mx-2">Update</button>
+        <form method="dialog">
+          <button class="btn btn-error">Close</button>
+        </form>
+      </div>
+    </div>
+ </dialog>
+
+ <dialog id="Contact_edit_modal" class="modal">
+  <div class="modal-box w-11/12 max-w-5xl">
+    <h3 class="text-lg font-bold">Edit Contact</h3>
+    <div class="flex gap-2">
+      <input type="text" placeholder="Name" id="" class="input input-bordered input-md w-full mt-4 mx-2" />
+      <input type="text" placeholder="Contact No." id="" class="input input-bordered input-md w-full mt-4 mx-2" />
+    </div>
+    <div class="modal-action">
+      <button class="btn btn-success mx-2">Update</button>
+      <form method="dialog">
+        <button class="btn btn-error">Close</button>
+      </form>
+    </div>
+  </div>
+ </dialog>
+
+ <dialog id="Services_edit_modal" class="modal">
+  <div class="modal-box w-11/12 max-w-5xl">
+    <h3 class="text-lg font-bold">Edit Service</h3>
+    <div class="flex gap-2">
+      <input type="text" placeholder="Service" id="" class="input input-bordered input-md w-full mt-4 mx-2" />
+    </div>
+    <div class="modal-action">
+      <button class="btn btn-success mx-2">Update</button>
+      <form method="dialog">
+        <button class="btn btn-error">Close</button>
+      </form>
+    </div>
+  </div>
+ </dialog>
+
+ <dialog id="Service_data_Edit_Modal" class="modal">
+  <div class="modal-box w-11/12 max-w-5xl">
+    <h3 class="text-lg font-bold">Edit Service</h3>
+
+    <input type="text" placeholder="Tite" id="" class="input input-bordered input-md w-full mt-4 mx-2" />
+    <input type="text" placeholder="Description" id="" class="input input-bordered input-md w-full mt-4 mx-2" />
+    <input type="text" placeholder="Image" id="" class="input input-bordered input-md w-full mt-4 mx-2" />
+    <input type="text" placeholder="Link" id="" class="input input-bordered input-md w-full mt-4 mx-2" />
+
+    <div class="modal-action">
+      <button class="btn btn-success mx-2">Update</button>
+      <form method="dialog">
+        <button class="btn btn-error">Close</button>
+      </form>
+    </div>
+  </div>
+ </dialog>
+
+ <dialog id="Slider_data_Edit_Modal" class="modal">
+  <div class="modal-box w-11/12 max-w-5xl">
+    <h3 class="text-lg font-bold">Edit Service</h3>
+
+    <input type="text" placeholder="Tite" id="" class="input input-bordered input-md w-full mt-4 mx-2" />
+    <input type="text" placeholder="Topic" id="" class="input input-bordered input-md w-full mt-4 mx-2" />
+    <input type="text" placeholder="Description" id="" class="input input-bordered input-md w-full mt-4 mx-2" />
+    <input type="text" placeholder="Image" id="" class="input input-bordered input-md w-full mt-4 mx-2" />
+    <input type="text" placeholder="Alt" id="" class="input input-bordered input-md w-full mt-4 mx-2" />
+    <input type="text" placeholder="Button ID" id="" class="input input-bordered input-md w-full mt-4 mx-2" />
+
+    <div class="modal-action">
+      <button class="btn btn-success mx-2">Update</button>
+      <form method="dialog">
+        <button class="btn btn-error">Close</button>
+      </form>
+    </div>
+  </div>
+ </dialog>
+
 </body>
 </html>
